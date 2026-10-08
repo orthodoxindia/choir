@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Docs on Choir | OCI</title>
+		<link>https://example.org/docs/</link>
+		<description>Recent content in Docs on Choir | OCI</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Alleluia</title>
+				<link>https://example.org/docs/alleluia/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/alleluia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Communion Hymn</title>
+				<link>https://example.org/docs/communion_hymn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/communion_hymn/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Great Litany</title>
+				<link>https://example.org/docs/01_great_litany/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/01_great_litany/</guid>
+				<description>&lt;h3 id=&#34;lord-have-mercy---1&#34;&gt;Lord, have mercy - 1&lt;a class=&#34;anchor&#34; href=&#34;#lord-have-mercy---1&#34; aria-label=&#34;Link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;audio controls&gt;&#xA;  &lt;source src=&#34;https://example.org/litany-responses/litany-1.mp4&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;  Your browser does not support the audio element.&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;h3 id=&#34;lord-have-mercy---2&#34;&gt;Lord, have mercy - 2&lt;a class=&#34;anchor&#34; href=&#34;#lord-have-mercy---2&#34; aria-label=&#34;Link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;audio controls&gt;&#xA;  &lt;source src=&#34;https://example.org/litany-responses/litany-2.mp4&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;  Your browser does not support the audio element.&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;h3 id=&#34;to-thee-o-lord&#34;&gt;To Thee, O Lord&lt;a class=&#34;anchor&#34; href=&#34;#to-thee-o-lord&#34; aria-label=&#34;Link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;audio controls&gt;&#xA;  &lt;source src=&#34;https://example.org/litany-responses/litany-3.mp4&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;  Your browser does not support the audio element.&#xA;&lt;/audio&gt;&#xA;&#xA;&lt;h3 id=&#34;amen&#34;&gt;Amen&lt;a class=&#34;anchor&#34; href=&#34;#amen&#34; aria-label=&#34;Link&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;audio controls&gt;&#xA;  &lt;source src=&#34;https://example.org/litany-responses/litany-4.mp4&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;  Your browser does not support the audio element.&#xA;&lt;/audio&gt;</description>
+			</item>
+			<item>
+				<title>Litany of Fervent Supplication</title>
+				<link>https://example.org/docs/litany_of_fervent_supplication/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/litany_of_fervent_supplication/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Litany of Thanksgiving</title>
+				<link>https://example.org/docs/litany_of_thanksgiving/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/litany_of_thanksgiving/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Little Litany</title>
+				<link>https://example.org/docs/little_litany/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/little_litany/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Prokeimenon</title>
+				<link>https://example.org/docs/prokeimenon/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/prokeimenon/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>First Antiphon</title>
+				<link>https://example.org/docs/02_first_antiphon/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/02_first_antiphon/</guid>
+				<description>&lt;p&gt;Bless the Lord, O my soul.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are Thou, O Lord!&lt;/p&gt;&#xA;&lt;p&gt;Bless the Lord, O my soul. And all that is within me, bless His holy name!&lt;/p&gt;&#xA;&lt;p&gt;Bless the Lord, O my soul, and forget not all His benefits;&lt;/p&gt;&#xA;&lt;p&gt;Who 5 forgives all thy iniquities, Who heals all thy diseases.&lt;/p&gt;&#xA;&lt;p&gt;The Lord is merciful and gracious, slow to anger and abounding in steadfast love.&lt;/p&gt;&#xA;&lt;p&gt;Bless the Lord, O my soul. And all that is within me, bless His holy name!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Second Antiphon</title>
+				<link>https://example.org/docs/03_second_antiphon/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/03_second_antiphon/</guid>
+				<description>&lt;p&gt;Amen.&lt;/p&gt;&#xA;&lt;p&gt;Glory to the Father, and to the Son, and to the Holy Spirit.&lt;/p&gt;&#xA;&lt;p&gt;Praise the Lord, O my soul!&lt;/p&gt;&#xA;&lt;p&gt;I will praise the Lord as long as I live;&lt;/p&gt;&#xA;&lt;p&gt;I will sing praises to my God while I have being.&lt;/p&gt;&#xA;&lt;p&gt;Put not your trust in princes, in sons of men in whom there is no salvation.&lt;/p&gt;&#xA;&lt;p&gt;When his breath 6 departs he returns to his earth;&lt;/p&gt;&#xA;&lt;p&gt;on that very day his plans perish.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hymn of Incarnation</title>
+				<link>https://example.org/docs/hymn_of_incarnation/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/hymn_of_incarnation/</guid>
+				<description>&lt;p&gt;Only-begotten Son and immortal Word of God,&lt;/p&gt;&#xA;&lt;p&gt;Who for our salvation willed to be incarnate&lt;/p&gt;&#xA;&lt;p&gt;of the holy Theotokos and ever-virgin Mary,&lt;/p&gt;&#xA;&lt;p&gt;who without change became man and was crucified,&lt;/p&gt;&#xA;&lt;p&gt;O Christ our God, trampling down death by death.&lt;/p&gt;&#xA;&lt;p&gt;Thou art one of the Holy Trinity,&lt;/p&gt;&#xA;&lt;p&gt;glorified with the Father and the Holy Spirit.&lt;/p&gt;&#xA;&lt;p&gt;Save us!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Third Antiphon</title>
+				<link>https://example.org/docs/third_antiphon/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/third_antiphon/</guid>
+				<description>&lt;p&gt;In Thy kingdom remember us O Lord when Thou come into Thy kingdom.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are those who mourn, for they shall be comforted.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are the meek, for they shall inherit the earth.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are those who hunger and thirst after righteousness, for they shall be filled.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are the merciful, for they shall receive mercy.&lt;/p&gt;&#xA;&lt;p&gt;Blessed are the pure in heart, for they shall see God.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Entrance Hymn</title>
+				<link>https://example.org/docs/entrance_hymn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/entrance_hymn/</guid>
+				<description>&lt;p&gt;Come, let us worship and fall down before Christ; O Son of God Who didst rise from the dead save us who chant unto Thee: Alleluia.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Trisagion Hymn</title>
+				<link>https://example.org/docs/trisagion_hymn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/trisagion_hymn/</guid>
+				<description>&lt;p&gt;People: Holy God! Holy Mighty! Holy Immortal! Have mercy on us. (3x)&lt;/p&gt;&#xA;&lt;p&gt;Glory to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages. Amen.&lt;/p&gt;&#xA;&lt;p&gt;Holy Immortal! Have mercy on us.&lt;/p&gt;&#xA;&lt;p&gt;Holy God! Holy Mighty! Holy Immortal! Have mercy on us.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Cherubic Hymn</title>
+				<link>https://example.org/docs/cherubic_hymn/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/cherubic_hymn/</guid>
+				<description>&lt;p&gt;Let us who mystically represent the cherubim,&lt;/p&gt;&#xA;&lt;p&gt;and sing the thrice-holy hymn to the life-creating Trinity,&lt;/p&gt;&#xA;&lt;p&gt;now lay aside all earthly cares.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Amen.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;That we may receive the King of all,&lt;/p&gt;&#xA;&lt;p&gt;Who comes invisibly upborne in triumph by the ranks of angels.&lt;/p&gt;&#xA;&lt;p&gt;Alleluia, alleluia, alleluia.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Litany of Supplication</title>
+				<link>https://example.org/docs/litany_of_supplication/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/litany_of_supplication/</guid>
+				<description>&lt;p&gt;Lord, have mercy.&lt;/p&gt;&#xA;&lt;p&gt;Grant it, O Lord.&lt;/p&gt;&#xA;&lt;p&gt;To Thee, O Lord.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Anaphora</title>
+				<link>https://example.org/docs/anaphora/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/anaphora/</guid>
+				<description>&lt;p&gt;A mercy of peace, a sacrifice of praise!&lt;/p&gt;&#xA;&lt;p&gt;And with thy spirit.&lt;/p&gt;&#xA;&lt;p&gt;We lift them up unto the Lord.&lt;/p&gt;&#xA;&lt;p&gt;It is fitting and right.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Holy! Holy! Holy! Lord of Sabaoth!&lt;/p&gt;&#xA;&lt;p&gt;Heaven and earth are full of Thy glory!&lt;/p&gt;&#xA;&lt;p&gt;Hosanna in the highest!&lt;/p&gt;&#xA;&lt;p&gt;Blessed is He Who comes in the Name of the Lord! Hosanna in the highest!&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;We praise Thee. We bless Thee. We give thanks to Thee, O Lord;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hymn to the Theotokos</title>
+				<link>https://example.org/docs/hymn_to_the_theotokos/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/hymn_to_the_theotokos/</guid>
+				<description>&lt;p&gt;It is truly meet to bless thee, O Theotokos,&lt;/p&gt;&#xA;&lt;p&gt;ever-blessed and most pure, and the Mother of our God.&lt;/p&gt;&#xA;&lt;p&gt;More honorable than the cherubim, and more glorious beyond compare than the seraphim:&lt;/p&gt;&#xA;&lt;p&gt;without defilement thou gavest birth to God the Word:&lt;/p&gt;&#xA;&lt;p&gt;true Theotokos, we magnify thee.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Lord&#39;s Prayer</title>
+				<link>https://example.org/docs/lords_prayer/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/lords_prayer/</guid>
+				<description>&lt;p&gt;Our Father, Who art in heaven,&lt;/p&gt;&#xA;&lt;p&gt;hallowed be Thy name.&lt;/p&gt;&#xA;&lt;p&gt;Thy kingdom come.&lt;/p&gt;&#xA;&lt;p&gt;Thy will be done, on earth as it is in heaven.&lt;/p&gt;&#xA;&lt;p&gt;Give us this day our daily bread,&lt;/p&gt;&#xA;&lt;p&gt;and forgive us our trespasses as we forgive those who trespass against us.&lt;/p&gt;&#xA;&lt;p&gt;And lead us not into temptation, but deliver us from the evil one.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Liturgy Ending</title>
+				<link>https://example.org/docs/liturgy_ending/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://example.org/docs/liturgy_ending/</guid>
+				<description>&lt;p&gt;We have seen the true Light!&lt;/p&gt;&#xA;&lt;p&gt;We have received the heavenly spirit!&lt;/p&gt;&#xA;&lt;p&gt;We have found the true faith!&lt;/p&gt;&#xA;&lt;p&gt;Worshipping the undivided Trinity, who has saved us.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Amen. Let our mouths be filled with Thy praise, O Lord,&lt;/p&gt;&#xA;&lt;p&gt;that we may sing of Thy glory;&lt;/p&gt;&#xA;&lt;p&gt;for Thou hast counted us worthy to partake of Thy holy, divine, immortal, and life-creating Mysteries.&lt;/p&gt;&#xA;&lt;p&gt;Keep us in Thy holiness,&lt;/p&gt;&#xA;&lt;p&gt;that all the day we may meditate upon Thy righteousness.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
