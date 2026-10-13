@@ -9,11 +9,9 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lord, have mercy #1
+<meta name="description" content=" Lord, have mercy #1
 Your browser does not support the audio element. Lord, have mercy #2
-Your browser does not support the audio element. To Thee, O Lord
-Your browser does not support the audio element. Amen
-Your browser does not support the audio element. ">
+">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
 <meta name="color-scheme" content="light dark">
@@ -21,10 +19,7 @@ Your browser does not support the audio element. ">
 	<meta property="og:site_name" content="Choir | OCI">
 	<meta property="og:title" content="Great Litany">
 	<meta property="og:description" content="Lord, have mercy #1
-Your browser does not support the audio element. Lord, have mercy #2
-Your browser does not support the audio element. To Thee, O Lord
-Your browser does not support the audio element. Amen
-Your browser does not support the audio element.">
+Your browser does not support the audio element. Lord, have mercy #2">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
@@ -32,10 +27,7 @@ Your browser does not support the audio element.">
 
 	<meta itemprop="name" content="Great Litany">
 	<meta itemprop="description" content="Lord, have mercy #1
-Your browser does not support the audio element. Lord, have mercy #2
-Your browser does not support the audio element. To Thee, O Lord
-Your browser does not support the audio element. Amen
-Your browser does not support the audio element.">
+Your browser does not support the audio element. Lord, have mercy #2">
 	<meta itemprop="wordCount" content="45">
 
 <title>Great Litany • Choir | OCI</title>
@@ -48,7 +40,7 @@ Your browser does not support the audio element.">
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.9f9148519a28c1cda36d4e9de7f358c361ae2eb32a27470ec42d266524493ee1.js" integrity="sha256-n5FIUZoowc2jbU6d5/NYw2GuLrMqJ0cOxC0mZSRJPuE=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.f510be56a0edb4a0de298e258256d07d5385d1cb5f53e634701e27a0a4c1ffb1.js" integrity="sha256-9RC&#43;VqDttKDeKY4lglbQfVOF0ctfU&#43;Y0cB4noKTB/7E=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -256,29 +248,265 @@ Your browser does not support the audio element.">
   
 
       
-  <article class="markdown book-article"><p>Lord, have mercy #1</p>
-<audio controls>
-  <source src="/choir/audio/Lord_have_mercy_1.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <article class="markdown book-article"><div class="hymn-item">
+  <p class="hymn-line">Lord, have mercy #1</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Lord_have_mercy_1.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
 
-<p>Lord, have mercy #2</p>
-<audio controls>
-  <source src="/choir/audio/Lord_have_mercy_2.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
 
-<p>To Thee, O Lord</p>
-<audio controls>
-  <source src="/choir/audio/To_Thee_O_Lord.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
 
-<p>Amen</p>
-<audio controls>
-  <source src="/choir/audio/Amen.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Lord, have mercy #2</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Lord_have_mercy_2.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">To Thee, O Lord</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/To_Thee_O_Lord.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Amen</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Amen.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
 
 </article>
  
