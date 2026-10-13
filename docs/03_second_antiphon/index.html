@@ -11,8 +11,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Bar-by-bar Amen. Glory to the Father, and to the Son, and to the Holy Spirit.
 Your browser does not support the audio element. Praise the Lord, O my soul!
-Your browser does not support the audio element. I will praise the Lord as long as I live;
-Your browser does not support the audio element. I will sing praises to my God while I have being.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
@@ -21,9 +19,7 @@ Your browser does not support the audio element. I will sing praises to my God w
 	<meta property="og:site_name" content="Choir | OCI">
 	<meta property="og:title" content="Second Antiphon">
 	<meta property="og:description" content="Bar-by-bar Amen. Glory to the Father, and to the Son, and to the Holy Spirit.
-Your browser does not support the audio element. Praise the Lord, O my soul!
-Your browser does not support the audio element. I will praise the Lord as long as I live;
-Your browser does not support the audio element. I will sing praises to my God while I have being.">
+Your browser does not support the audio element. Praise the Lord, O my soul!">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
@@ -31,10 +27,8 @@ Your browser does not support the audio element. I will sing praises to my God w
 
 	<meta itemprop="name" content="Second Antiphon">
 	<meta itemprop="description" content="Bar-by-bar Amen. Glory to the Father, and to the Son, and to the Holy Spirit.
-Your browser does not support the audio element. Praise the Lord, O my soul!
-Your browser does not support the audio element. I will praise the Lord as long as I live;
-Your browser does not support the audio element. I will sing praises to my God while I have being.">
-	<meta itemprop="wordCount" content="239">
+Your browser does not support the audio element. Praise the Lord, O my soul!">
+	<meta itemprop="wordCount" content="324">
 
 <title>Second Antiphon • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -46,7 +40,7 @@ Your browser does not support the audio element. I will sing praises to my God w
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.f510be56a0edb4a0de298e258256d07d5385d1cb5f53e634701e27a0a4c1ffb1.js" integrity="sha256-9RC&#43;VqDttKDeKY4lglbQfVOF0ctfU&#43;Y0cB4noKTB/7E=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.5e13605803a01f27f4f538b44b6b84842e11b892ec53ecbb8fb17525f9554703.js" integrity="sha256-XhNgWAOgHyf09Ti0S2uEhC4RuJLsU&#43;y7j7F1JflVRwM=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -255,72 +249,536 @@ Your browser does not support the audio element. I will sing praises to my God w
 
       
   <article class="markdown book-article"><h2 id="bar-by-bar">Bar-by-bar<a class="anchor" href="#bar-by-bar" aria-label="Link"></a></h2>
-<p>Amen. Glory to the Father, and to the Son, and to the Holy Spirit.</p>
-<div class="hymn-audio-wrap">
+<div class="hymn-item">
+  <p class="hymn-line">Amen. Glory to the Father, and to the Son, and to the Holy Spirit.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B1-3.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B1-3.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Praise the Lord, O my soul!</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Praise the Lord, O my soul!</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B4.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B4.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>I will praise the Lord as long as I live;</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">I will praise the Lord as long as I live;</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B5.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B5.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>I will sing praises to my God while I have being.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">I will sing praises to my God while I have being.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B6.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B6.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Put not thy trust in princes, in sons of men in whom there is no salvation.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Put not thy trust in princes, in sons of men in whom there is no salvation.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B7.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B7.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>When his breath departs he returns to his earth;</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">When his breath departs he returns to his earth;</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B8.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B8.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>on that very day his plans perish.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">on that very day his plans perish.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B9.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B9.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>The Lord will reign forever; Thy God, O Zion, to all generations.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">The Lord will reign forever; Thy God, O Zion, to all generations.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A2_B10.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A2_B10.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
 
 <hr>
 <h2 id="complete-hymn">Complete Hymn<a class="anchor" href="#complete-hymn" aria-label="Link"></a></h2>
+<p>Amen. Glory to the Father, and to the Son, and to the Holy Spirit.</p>
+<p>Praise the Lord, O my soul!</p>
+<p>I will praise the Lord as long as I live;</p>
+<p>I will sing praises to my God while I have being.</p>
+<p>Put not thy trust in princes, in sons of men in whom there is no salvation.</p>
+<p>When his breath departs he returns to his earth;</p>
+<p>on that very day his plans perish.</p>
+<p>The Lord will reign forever; Thy God, O Zion, to all generations.</p>
 <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
       <source src="/choir/audio/2nd_Antiphon_%28full%29.m4a" type="audio/mpeg">

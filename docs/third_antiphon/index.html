@@ -9,10 +9,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.
+<meta name="description" content=" In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.
 Your browser does not support the audio element. Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.
-Your browser does not support the audio element. Blessed are those who mourn, for they shall be comforted.
-Your browser does not support the audio element. Blessed are the meek, for they shall inherit the earth.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
@@ -21,9 +19,7 @@ Your browser does not support the audio element. Blessed are the meek, for they 
 	<meta property="og:site_name" content="Choir | OCI">
 	<meta property="og:title" content="Third Antiphon">
 	<meta property="og:description" content="In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.
-Your browser does not support the audio element. Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.
-Your browser does not support the audio element. Blessed are those who mourn, for they shall be comforted.
-Your browser does not support the audio element. Blessed are the meek, for they shall inherit the earth.">
+Your browser does not support the audio element. Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
@@ -31,9 +27,7 @@ Your browser does not support the audio element. Blessed are the meek, for they 
 
 	<meta itemprop="name" content="Third Antiphon">
 	<meta itemprop="description" content="In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.
-Your browser does not support the audio element. Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.
-Your browser does not support the audio element. Blessed are those who mourn, for they shall be comforted.
-Your browser does not support the audio element. Blessed are the meek, for they shall inherit the earth.">
+Your browser does not support the audio element. Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.">
 	<meta itemprop="wordCount" content="273">
 
 <title>Third Antiphon • Choir | OCI</title>
@@ -46,7 +40,7 @@ Your browser does not support the audio element. Blessed are the meek, for they 
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.f510be56a0edb4a0de298e258256d07d5385d1cb5f53e634701e27a0a4c1ffb1.js" integrity="sha256-9RC&#43;VqDttKDeKY4lglbQfVOF0ctfU&#43;Y0cB4noKTB/7E=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.5e13605803a01f27f4f538b44b6b84842e11b892ec53ecbb8fb17525f9554703.js" integrity="sha256-XhNgWAOgHyf09Ti0S2uEhC4RuJLsU&#43;y7j7F1JflVRwM=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -254,109 +248,850 @@ Your browser does not support the audio element. Blessed are the meek, for they 
   
 
       
-  <article class="markdown book-article"><p>In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.</p>
-<div class="hymn-audio-wrap">
+  <article class="markdown book-article"><div class="hymn-item">
+  <p class="hymn-line">In Thy kingdom remember us O Lord when Thou comest in Thy kingdom.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_13.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_13.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are the poor in spirit, for theirs is the Kingdom of Heaven.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_12.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_12.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are those who mourn, for they shall be comforted.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are those who mourn, for they shall be comforted.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_11.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_11.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are the meek, for they shall inherit the earth.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are the meek, for they shall inherit the earth.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_10.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_10.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are those who hunger and thirst after righteousness, for they shall be filled.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are those who hunger and thirst after righteousness, for they shall be filled.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_9.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_9.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are the merciful, for they shall obtain mercy.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are the merciful, for they shall obtain mercy.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_8.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_8.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are the pure in heart, for they shall see God.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are the pure in heart, for they shall see God.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_7.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_7.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are the peacemakers, for they shall be called the sons of God.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are the peacemakers, for they shall be called the sons of God.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_6.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_6.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are those who are persecuted for righteousness&rsquo;; sake, for theirs is the Kingdom of Heaven.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are those who are persecuted for righteousness&rsquo;; sake, for theirs is the Kingdom of Heaven.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_5.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_5.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Blessed are ye when men shall revile you and persecute you, and shall say all manner of evil against you falsely for My sake.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Blessed are ye when men shall revile you and persecute you, and shall say all manner of evil against you falsely for My sake.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_4.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_4.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Rejoice and be exceedingly glad, for great is your reward in heaven.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Rejoice and be exceedingly glad, for great is your reward in heaven.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_3.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_3.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>Glory to the Father, and to the Son, and to the Holy Spirit,</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Glory to the Father, and to the Son, and to the Holy Spirit,</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_2.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_2.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
 
-<p>both now and ever, and unto the ages of ages. Amen.</p>
-<div class="hymn-audio-wrap">
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">both now and ever, and unto the ages of ages. Amen.</p>
+  <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
-      <source src="/choir/audio/A3_1.m4a" type="audio/mpeg">
+      <source src="/choir/audio/A3_1.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
+  </div>
 </div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
 
 </article>
  
