@@ -9,15 +9,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A mercy of peace, a sacrifice of praise!
-And with thy spirit.
-We lift them up unto the Lord.
-It is fitting and right.
-Holy! Holy! Holy! Lord of Sabaoth!
-Heaven and earth are full of Thy glory!
-Hosanna in the highest!
-Blessed is He Who comes in the Name of the Lord! Hosanna in the highest!
-We praise Thee. We bless Thee. We give thanks to Thee, O Lord;
+<meta name="description" content=" A mercy of peace, a sacrifice of praise!
+Your browser does not support the audio element. And with your spirit.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
@@ -26,14 +19,7 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;
 	<meta property="og:site_name" content="Choir | OCI">
 	<meta property="og:title" content="Anaphora">
 	<meta property="og:description" content="A mercy of peace, a sacrifice of praise!
-And with thy spirit.
-We lift them up unto the Lord.
-It is fitting and right.
-Holy! Holy! Holy! Lord of Sabaoth!
-Heaven and earth are full of Thy glory!
-Hosanna in the highest!
-Blessed is He Who comes in the Name of the Lord! Hosanna in the highest!
-We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
+Your browser does not support the audio element. And with your spirit.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
@@ -41,15 +27,8 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
 
 	<meta itemprop="name" content="Anaphora">
 	<meta itemprop="description" content="A mercy of peace, a sacrifice of praise!
-And with thy spirit.
-We lift them up unto the Lord.
-It is fitting and right.
-Holy! Holy! Holy! Lord of Sabaoth!
-Heaven and earth are full of Thy glory!
-Hosanna in the highest!
-Blessed is He Who comes in the Name of the Lord! Hosanna in the highest!
-We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
-	<meta itemprop="wordCount" content="78">
+Your browser does not support the audio element. And with your spirit.">
+	<meta itemprop="wordCount" content="162">
 
 <title>Anaphora • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -61,7 +40,7 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.2a8bbc2a1d1a46549f19cee8f4db73f42f69cff10a434edc4468b9b713d1b488.js" integrity="sha256-Kou8Kh0aRlSfGc7o9Ntz9C9pz/EKQ07cRGi5txPRtIg=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.bf7bc4a7a87cf16f2a3de76fb281dc23bfc42edcde57a0a36f7e67feac2f4270.js" integrity="sha256-v3vEp6h88W8qPedvsoHcI7/ELtzeV6Cjb35n/qwvQnA=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -274,6 +253,20 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
   
 
   
+    <a href="/choir/docs/anaphora/" class="active">
+      Anaphora</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/choir/docs/hymn_to_the_theotokos/" class="">
       Hymn to the Theotokos</a>
   
@@ -383,18 +376,527 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
   
 
       
-  <article class="markdown book-article"><p>A mercy of peace, a sacrifice of praise!</p>
-<p>And with thy spirit.</p>
-<p>We lift them up unto the Lord.</p>
-<p>It is fitting and right.</p>
+  <article class="markdown book-article"><div class="hymn-item">
+  <p class="hymn-line">A mercy of peace, a sacrifice of praise!</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_1.mp3" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">And with your spirit.</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_2.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">We lift them up unto the Lord.</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_3.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">It is meet and right. It is meet and right.</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_4.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
 <hr>
-<p>Holy! Holy! Holy! Lord of Sabaoth!</p>
-<p>Heaven and earth are full of Thy glory!</p>
-<p>Hosanna in the highest!</p>
-<p>Blessed is He Who comes in the Name of the Lord! Hosanna in the highest!</p>
-<hr>
-<p>We praise Thee. We bless Thee. We give thanks to Thee, O Lord;</p>
-<p>and we pray unto Thee, O our God.</p>
+<div class="hymn-item">
+  <p class="hymn-line">Holy! Holy! Holy! Lord of Sabaoth! Heaven and earth are full of Thy glory! Hosanna in the highest! Blessed is He that comes in the Name of the Lord! Hosanna in the highest!</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_5.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Amen</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_6.mp3" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Amen</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_7.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">We praise Thee. We bless Thee. We give thanks unto Thee, we give thanks unto Thee O Lord; and we pray unto Thee, and we pray unto Thee. O our God, O our God.</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Anaphora_8.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
 </article>
  
       
@@ -413,7 +915,24 @@ We praise Thee. We bless Thee. We give thanks to Thee, O Lord;">
 
 </div>
 
-
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/choir/docs/father_son_holy_spirit/" class="flex align-center">
+        <svg class="book-icon" aria-hidden="true"><use href="/choir/iconset.min.90a7fd302dc1b9bc3c291688faee66a3e60a9209f59b89fa00669e35d6907b3f.svg#backward"></use></svg>
+        <span>Father, Son and Holy Spirit</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/choir/docs/hymn_to_the_theotokos/" class="flex align-center">
+        <span>Hymn to the Theotokos</span>
+        <svg class="book-icon" aria-hidden="true"><use href="/choir/iconset.min.90a7fd302dc1b9bc3c291688faee66a3e60a9209f59b89fa00669e35d6907b3f.svg#forward"></use></svg>
+      </a>
+    
+    </span>
+  </div>
 
  
         
