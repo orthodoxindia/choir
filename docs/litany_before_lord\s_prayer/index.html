@@ -28,7 +28,7 @@ Your browser does not support the audio element. Grant it, O Lord">
 	<meta itemprop="name" content="Litany before Lord&#39;s Prayer">
 	<meta itemprop="description" content="Litany before Lord’s Prayer First Voice Fa Major Lord, have mercy
 Your browser does not support the audio element. Grant it, O Lord">
-	<meta itemprop="wordCount" content="180">
+	<meta itemprop="wordCount" content="138">
 
 <title>Litany before Lord&#39;s Prayer • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@ Your browser does not support the audio element. Grant it, O Lord">
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.34e0758c436ad04eb856664cfc28c4057ff72cd6ddf6eea38952bd5e05bb112f.js" integrity="sha256-NOB1jENq0E64VmZM/CjEBX/3LNbd9u6jiVK9XgW7ES8=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.90091e697494b1c68bc5bbd5b334bb2f579baf6ac02eaaf964f24a4e9a29dacc.js" integrity="sha256-kAkeaXSUscaLxbvVszS7L1ebr2rALqr5ZPJKTpop2sw=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -588,136 +588,6 @@ if (typeof window.hymnHooksInitialized === 'undefined') {
 }
 </script>
 
-<div class="hymn-item">
-  <p class="hymn-line">Amen</p>
-  <div class="hymn-audio-wrap">
-    <audio controls class="hymn-audio">
-      <source src="/choir/audio/LS_Amen_FV.mp3" type="audio/mp4">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-<style>
-.hymn-item {
-  margin-bottom: 1.5rem;
-}
-
-.hymn-line {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.hymn-line.active {
-  background-color: #e3f2fd !important;  
-  color: #0d47a1 !important;
-  font-weight: 600;
-}
-</style>
-
-<script>
-if (typeof window.hymnHooksInitialized === 'undefined') {
-  window.hymnHooksInitialized = true;
-
-  document.addEventListener('play', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-
-      document.querySelectorAll('.hymn-line').forEach((line) => {
-        line.classList.remove('active');
-      });
-
-      document.querySelectorAll('.hymn-audio').forEach((other) => {
-        if (other !== audio) other.pause();
-      });
-
-      if (currentLine) {
-        currentLine.classList.add('active');
-      }
-    }
-  }, true);
-
-  document.addEventListener('ended', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-      if (currentLine) {
-        currentLine.classList.remove('active');
-      }
-    }
-  }, true);
-}
-</script>
-
-<div class="hymn-item">
-  <p class="hymn-line">And to Thy Spirit</p>
-  <div class="hymn-audio-wrap">
-    <audio controls class="hymn-audio">
-      <source src="/choir/audio/LS_and_to_Thy_Spirit_FV.mp3" type="audio/mp4">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-<style>
-.hymn-item {
-  margin-bottom: 1.5rem;
-}
-
-.hymn-line {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.hymn-line.active {
-  background-color: #e3f2fd !important;  
-  color: #0d47a1 !important;
-  font-weight: 600;
-}
-</style>
-
-<script>
-if (typeof window.hymnHooksInitialized === 'undefined') {
-  window.hymnHooksInitialized = true;
-
-  document.addEventListener('play', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-
-      document.querySelectorAll('.hymn-line').forEach((line) => {
-        line.classList.remove('active');
-      });
-
-      document.querySelectorAll('.hymn-audio').forEach((other) => {
-        if (other !== audio) other.pause();
-      });
-
-      if (currentLine) {
-        currentLine.classList.add('active');
-      }
-    }
-  }, true);
-
-  document.addEventListener('ended', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-      if (currentLine) {
-        currentLine.classList.remove('active');
-      }
-    }
-  }, true);
-}
-</script>
-
 <h4 id="re-major-lower"><strong>Re Major (lower)</strong><a class="anchor" href="#re-major-lower" aria-label="Link"></a></h4>
 <div class="hymn-item">
   <p class="hymn-line">Lord, have mercy</p>
@@ -1116,136 +986,6 @@ if (typeof window.hymnHooksInitialized === 'undefined') {
   <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
       <source src="/choir/audio/LS_To_Thee_O_Lord_SV.m4a" type="audio/mp4">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-<style>
-.hymn-item {
-  margin-bottom: 1.5rem;
-}
-
-.hymn-line {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.hymn-line.active {
-  background-color: #e3f2fd !important;  
-  color: #0d47a1 !important;
-  font-weight: 600;
-}
-</style>
-
-<script>
-if (typeof window.hymnHooksInitialized === 'undefined') {
-  window.hymnHooksInitialized = true;
-
-  document.addEventListener('play', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-
-      document.querySelectorAll('.hymn-line').forEach((line) => {
-        line.classList.remove('active');
-      });
-
-      document.querySelectorAll('.hymn-audio').forEach((other) => {
-        if (other !== audio) other.pause();
-      });
-
-      if (currentLine) {
-        currentLine.classList.add('active');
-      }
-    }
-  }, true);
-
-  document.addEventListener('ended', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-      if (currentLine) {
-        currentLine.classList.remove('active');
-      }
-    }
-  }, true);
-}
-</script>
-
-<div class="hymn-item">
-  <p class="hymn-line">Amen</p>
-  <div class="hymn-audio-wrap">
-    <audio controls class="hymn-audio">
-      <source src="/choir/audio/LS_Amen_SV.mp3" type="audio/mp4">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</div>
-
-<style>
-.hymn-item {
-  margin-bottom: 1.5rem;
-}
-
-.hymn-line {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.hymn-line.active {
-  background-color: #e3f2fd !important;  
-  color: #0d47a1 !important;
-  font-weight: 600;
-}
-</style>
-
-<script>
-if (typeof window.hymnHooksInitialized === 'undefined') {
-  window.hymnHooksInitialized = true;
-
-  document.addEventListener('play', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-
-      document.querySelectorAll('.hymn-line').forEach((line) => {
-        line.classList.remove('active');
-      });
-
-      document.querySelectorAll('.hymn-audio').forEach((other) => {
-        if (other !== audio) other.pause();
-      });
-
-      if (currentLine) {
-        currentLine.classList.add('active');
-      }
-    }
-  }, true);
-
-  document.addEventListener('ended', (e) => {
-    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
-      const audio = e.target;
-      const currentItem = audio.closest('.hymn-item');
-      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
-      if (currentLine) {
-        currentLine.classList.remove('active');
-      }
-    }
-  }, true);
-}
-</script>
-
-<div class="hymn-item">
-  <p class="hymn-line">And to Thy Spirit</p>
-  <div class="hymn-audio-wrap">
-    <audio controls class="hymn-audio">
-      <source src="/choir/audio/LS_and_to_Thy_Spirit_SV.mp3" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
   </div>
