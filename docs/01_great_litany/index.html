@@ -28,7 +28,7 @@ Your browser does not support the audio element. Lord, have mercy #2">
 	<meta itemprop="name" content="Great Litany">
 	<meta itemprop="description" content="Great Litany Fa Major Lord, have mercy #1
 Your browser does not support the audio element. Lord, have mercy #2">
-	<meta itemprop="wordCount" content="87">
+	<meta itemprop="wordCount" content="96">
 
 <title>Great Litany • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@ Your browser does not support the audio element. Lord, have mercy #2">
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.346fd4618193e6aacf2573bd2d2cc6679d0084a4abdb276d4fc780950a65fa64.js" integrity="sha256-NG/UYYGT5qrPJXO9LSzGZ50AhKSr2ydtT8eAlQpl&#43;mQ=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.34e0758c436ad04eb856664cfc28c4057ff72cd6ddf6eea38952bd5e05bb112f.js" integrity="sha256-NOB1jENq0E64VmZM/CjEBX/3LNbd9u6jiVK9XgW7ES8=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -788,6 +788,71 @@ if (typeof window.hymnHooksInitialized === 'undefined') {
   <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
       <source src="/choir/audio/To_Thee_O_Lord_lower.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<div class="hymn-item">
+  <p class="hymn-line">Amen</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Amen_lower.mp3" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
   </div>
