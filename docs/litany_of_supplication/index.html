@@ -28,7 +28,7 @@ Your browser does not support the audio element. Grant it, O Lord">
 	<meta itemprop="name" content="Litany of Supplication">
 	<meta itemprop="description" content="Litany of Supplication First Voice Fa Major Lord, have mercy
 Your browser does not support the audio element. Grant it, O Lord">
-	<meta itemprop="wordCount" content="159">
+	<meta itemprop="wordCount" content="179">
 
 <title>Litany of Supplication • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@ Your browser does not support the audio element. Grant it, O Lord">
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.bf7bc4a7a87cf16f2a3de76fb281dc23bfc42edcde57a0a36f7e67feac2f4270.js" integrity="sha256-v3vEp6h88W8qPedvsoHcI7/ELtzeV6Cjb35n/qwvQnA=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.3e75b16403b3bcc519850749d8c59a3dd2a9f8bd53d02c30b7498ae897bb82ec.js" integrity="sha256-PnWxZAOzvMUZhQdJ2MWaPdKp&#43;L1T0Cwwt0mK6Je7guw=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -840,6 +840,72 @@ if (typeof window.hymnHooksInitialized === 'undefined') {
   <div class="hymn-audio-wrap">
     <audio controls class="hymn-audio">
       <source src="/choir/audio/To_Thee_O_Lord_alt_lower.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
+<h4 id="complete"><em>Complete</em><a class="anchor" href="#complete" aria-label="Link"></a></h4>
+<div class="hymn-item">
+  <p class="hymn-line">Lord, have mercy. Grant it, O Lord. To Thee, O Lord.</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/LS_full.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
   </div>
