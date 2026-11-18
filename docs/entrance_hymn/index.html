@@ -9,23 +9,31 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Come, let us worship and fall down before Christ; O Son of God Who didst rise from the dead save us who chant unto Thee: Alleluia.
-">
+<meta name="description" content=" Come, let us worship and fall down before Christ
+O Son of God Who rose from the dead
+save us who sing to Thee: Alleluia.
+Your browser does not support the audio element. ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
 <meta name="color-scheme" content="light dark">
 <meta name="format-detection" content="telephone=no"><meta property="og:url" content="https://orthodoxindia.github.io/choir/docs/entrance_hymn/">
 	<meta property="og:site_name" content="Choir | OCI">
 	<meta property="og:title" content="Entrance Hymn">
-	<meta property="og:description" content="Come, let us worship and fall down before Christ; O Son of God Who didst rise from the dead save us who chant unto Thee: Alleluia.">
+	<meta property="og:description" content="Come, let us worship and fall down before Christ
+O Son of God Who rose from the dead
+save us who sing to Thee: Alleluia.
+Your browser does not support the audio element.">
 	<meta property="og:locale" content="en_us">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="docs">
 
 
 	<meta itemprop="name" content="Entrance Hymn">
-	<meta itemprop="description" content="Come, let us worship and fall down before Christ; O Son of God Who didst rise from the dead save us who chant unto Thee: Alleluia.">
-	<meta itemprop="wordCount" content="26">
+	<meta itemprop="description" content="Come, let us worship and fall down before Christ
+O Son of God Who rose from the dead
+save us who sing to Thee: Alleluia.
+Your browser does not support the audio element.">
+	<meta itemprop="wordCount" content="33">
 
 <title>Entrance Hymn • Choir | OCI</title>
 <link rel="icon" href="/choir/favicon.svg" type="image/svg+xml">
@@ -37,7 +45,7 @@
 <link rel="stylesheet" href="/choir/book.min.8280b157fc1158f6c874d155ebf7ebbf6a1ec2e781400ea12e9c295e00ce087e.css" integrity="sha256-goCxV/wRWPbIdNFV6/frv2oewueBQA6hLpwpXgDOCH4=" crossorigin="anonymous">
 
 
-<script type="module" src="/choir/en.search.min.90091e697494b1c68bc5bbd5b334bb2f579baf6ac02eaaf964f24a4e9a29dacc.js" integrity="sha256-kAkeaXSUscaLxbvVszS7L1ebr2rALqr5ZPJKTpop2sw=" crossorigin="anonymous"></script>
+<script type="module" src="/choir/en.search.min.bda1007d73b6a831cb4c19f765f237c400401174a0381766fc64b02a1ca4d27f.js" integrity="sha256-vaEAfXO2qDHLTBn3ZfI3xABAEXSgOBdm/GSwKhyk0n8=" crossorigin="anonymous"></script>
   
 </head>
 <body dir="ltr" class="book-kind-page book-type-docs">
@@ -126,6 +134,20 @@
   
     <a href="/choir/docs/third_antiphon/" class="">
       Third Antiphon</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/choir/docs/entrance_hymn/" class="active">
+      Entrance Hymn</a>
   
 
         </li>
@@ -387,7 +409,74 @@
   
 
       
-  <article class="markdown book-article"><p>Come, let us worship and fall down before Christ; O Son of God Who didst rise from the dead save us who chant unto Thee: Alleluia.</p>
+  <article class="markdown book-article"><div class="hymn-item">
+  <p class="hymn-line"><p>Come, let us worship and fall down before Christ</p>
+<p>O Son of God Who rose from the dead</p>
+<p>save us who sing to Thee: Alleluia.</p>
+</p>
+  <div class="hymn-audio-wrap">
+    <audio controls class="hymn-audio">
+      <source src="/choir/audio/Entrance_Hymn.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</div>
+
+<style>
+.hymn-item {
+  margin-bottom: 1.5rem;
+}
+
+.hymn-line {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hymn-line.active {
+  background-color: #e3f2fd !important;  
+  color: #0d47a1 !important;
+  font-weight: 600;
+}
+</style>
+
+<script>
+if (typeof window.hymnHooksInitialized === 'undefined') {
+  window.hymnHooksInitialized = true;
+
+  document.addEventListener('play', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+
+      document.querySelectorAll('.hymn-line').forEach((line) => {
+        line.classList.remove('active');
+      });
+
+      document.querySelectorAll('.hymn-audio').forEach((other) => {
+        if (other !== audio) other.pause();
+      });
+
+      if (currentLine) {
+        currentLine.classList.add('active');
+      }
+    }
+  }, true);
+
+  document.addEventListener('ended', (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains('hymn-audio')) {
+      const audio = e.target;
+      const currentItem = audio.closest('.hymn-item');
+      const currentLine = currentItem ? currentItem.querySelector('.hymn-line') : null;
+      if (currentLine) {
+        currentLine.classList.remove('active');
+      }
+    }
+  }, true);
+}
+</script>
+
 </article>
  
       
@@ -406,7 +495,24 @@
 
 </div>
 
-
+<div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/choir/docs/third_antiphon/" class="flex align-center">
+        <svg class="book-icon" aria-hidden="true"><use href="/choir/iconset.min.90a7fd302dc1b9bc3c291688faee66a3e60a9209f59b89fa00669e35d6907b3f.svg#backward"></use></svg>
+        <span>Third Antiphon</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/choir/docs/trisagion_hymn/" class="flex align-center">
+        <span>Trisagion Hymn</span>
+        <svg class="book-icon" aria-hidden="true"><use href="/choir/iconset.min.90a7fd302dc1b9bc3c291688faee66a3e60a9209f59b89fa00669e35d6907b3f.svg#forward"></use></svg>
+      </a>
+    
+    </span>
+  </div>
 
  
         
